@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3e2f0ce-e690-4e23-8e67-f45d3415d2fd" name="Default Changelist" comment="">
+    <list default="true" id="e3e2f0ce-e690-4e23-8e67-f45d3415d2fd" name="Default Changelist" comment="[fix-kafkastudy]">
       <change afterPath="$PROJECT_DIR$/kafka/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/kafka/src/main/java/com/java/study/consumer/KafkaConsumer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/kafka/src/main/java/com/java/study/producer/KafkaProducer.java" afterDir="false" />
@@ -69,14 +69,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kafka/src/main/java/com/java/study/consumer/KafkaConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="201">
+              <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shoppingList.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -144,6 +153,7 @@
         <option value="$PROJECT_DIR$/kafka/src/test/java/com/java/study/ConsumerTest.java" />
         <option value="$PROJECT_DIR$/kafka/src/main/java/com/java/study/producer/KafkaProducer.java" />
         <option value="$PROJECT_DIR$/kafka/src/main/java/com/java/study/consumer/KafkaConsumer.java" />
+        <option value="$PROJECT_DIR$/shoppingList.txt" />
       </list>
     </option>
   </component>
@@ -442,7 +452,7 @@
       <workItem from="1578926377716" duration="1123000" />
       <workItem from="1585835510115" duration="3705000" />
       <workItem from="1585880479782" duration="522000" />
-      <workItem from="1585994588423" duration="266000" />
+      <workItem from="1585994588423" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="[fix-redis]">
       <created>1576166828477</created>
@@ -501,7 +511,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32994000" />
+    <option name="totallyTimeSpent" value="33087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="23" width="1609" height="1027" extended-state="6" />
@@ -516,19 +526,19 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984046" weight="0.17754011" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8959796" visible="true" weight="0.5240642" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8959796" weight="0.5240642" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.060962565" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4996809" visible="true" weight="0.6" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Sequence" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.104020424" side_tool="true" visible="true" weight="0.5240642" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.50031906" side_tool="true" visible="true" weight="0.6" />
       <window_info anchor="bottom" id="Tail" order="16" />
       <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.49585193" weight="0.2737968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -546,7 +556,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[fix-redis]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix-redis]" />
+    <MESSAGE value="[fix-kafkastudy]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix-kafkastudy]" />
   </component>
   <component name="WindowStateProjectService">
     <state width="410" height="704" key="Git.Branch.Popup" />
@@ -620,13 +631,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Formatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63210">
-          <caret line="4301" selection-start-line="4301" selection-end-line="4301" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Jedis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -980,11 +984,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kafka/src/main/java/com/java/study/consumer/KafkaConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="201">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingList.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
