@@ -10,12 +10,12 @@ import org.apache.shiro.util.Factory;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class LoginLogoutTest {
+public class LoginLogoutRealmTest {
 
 
     @Test
     public void helloWorld(){
-        Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro.ini");
+        Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro-realm.ini");
 
         SecurityManager securityManager = factory.getInstance();
         // 全局设置，设置一次即可
