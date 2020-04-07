@@ -1,5 +1,6 @@
-package com.java.study.producer;
+package com.java.study.partitioner;
 
+import com.java.study.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -9,7 +10,8 @@ import java.util.Objects;
 import java.util.Properties;
 import java.util.concurrent.Future;
 
-public class KafkaProducer implements Runnable {
+public class CustomerPartitionerProducer {
+
     public static final String brokerList = "10.26.15.206:9092";
     public static final String topic = "topic-demo";
     public static org.apache.kafka.clients.producer.KafkaProducer<String, String> kafkaProducer;
@@ -20,18 +22,18 @@ public class KafkaProducer implements Runnable {
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, brokerList);
-        properties.put(ProducerConfig.CLIENT_ID_CONFIG,clientId);
+        properties.put(ProducerConfig.CLIENT_ID_CONFIG, clientId);
+        properties.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, CustomerPartitioner.class.getName());
         kafkaProducer = new org.apache.kafka.clients.producer.KafkaProducer<String, String>(properties);
     }
 
-    @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
-            ProducerRecord<String, String> record = new ProducerRecord<>(topic, "hello,kafka" + i);
+            ProducerRecord<String, String> record = new ProducerRecord<>(topic, i + "", "hello,有key的kafka" + i);
             try {
-                Future<RecordMetadata> future = kafkaProducer.send(record,new KafkaMessageCallback(record));
-//                RecordMetadata recordMetadata = future.get();
-//                System.out.println(recordMetadata);
+                kafkaProducer.send(record, new KafkaProducer.KafkaMessageCallback(record)).get();
+                record = new ProducerRecord<>(topic, i + "", "hello,有key的kafka" + i);
+                kafkaProducer.send(record, new KafkaProducer.KafkaMessageCallback(record)).get();
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
@@ -41,22 +43,4 @@ public class KafkaProducer implements Runnable {
     }
 
 
-    public static class KafkaMessageCallback implements Callback{
-        public ProducerRecord producerRecord;
-
-        public KafkaMessageCallback(ProducerRecord producerRecord) {
-            this.producerRecord = producerRecord;
-        }
-
-        @Override
-        public void onCompletion(RecordMetadata recordMetadata, Exception e) {
-            System.out.println(producerRecord.value());
-            if (Objects.nonNull(e)){
-                e.printStackTrace();
-            }else {
-                System.out.println(recordMetadata);
-            }
-
-        }
-    }
 }
