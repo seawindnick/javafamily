@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class MonitorVehicleTracker {
 
@@ -17,6 +18,13 @@ public class MonitorVehicleTracker {
     }
 
 
+    /**
+     * 并不只是使用 unmodifiableMap 包装 Map，只能防止容器对象被修改，不能防止调用者修改保存在容器内的可变对象
+     * 如果只是通过拷贝构造函数填充deepCopy中的HashMap,只是复制了Point对西那个的引用，没有复制对象本身
+     *
+     * 由于 方法是在 synchronized 中调用，再执行时间较长的复制操作中，其内置锁将一直被占用，当有大量数据需要访问时，会严重降低相应性能
+     * @return
+     */
     public synchronized Map<String,MutablePoint> getLocations(){
         return deepCopy(locations);
     }
@@ -53,6 +61,8 @@ public class MonitorVehicleTracker {
         }
 
         public MutablePoint(MutablePoint mutablePoint) {
+
+
             this.x = mutablePoint.getX();
             this.y = mutablePoint.getY();
         }

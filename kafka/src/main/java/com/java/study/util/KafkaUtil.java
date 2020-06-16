@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class KafkaUtil {
 
-    public static final String brokerList = "10.26.15.206:9092";
+    public static final String brokerList = "kafka01-matrix.zeus.lianjia.com:9092,kafka02-matrix.zeus.lianjia.com:9092,kafka03-matrix.zeus.lianjia.com:9092";
     public static final String topic = "topic-demo1";
     public static final String clientId = "producer.client.id.demo";
     public static final String groupId = "group.demo.11112";
@@ -37,7 +37,7 @@ public class KafkaUtil {
         org.apache.kafka.clients.consumer.KafkaConsumer<String,String> consumer = new org.apache.kafka.clients.consumer.KafkaConsumer<String, String>(properties);
         //创建一个消费者客户端实例
         consumer =  new org.apache.kafka.clients.consumer.KafkaConsumer(properties);
-        consumer.subscribe(Collections.singleton(topic));
+        consumer.subscribe(Collections.singleton("epx-10x200x14x29-7843-rpms"));
         return consumer;
 
     }

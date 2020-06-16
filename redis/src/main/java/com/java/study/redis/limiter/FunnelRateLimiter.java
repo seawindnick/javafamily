@@ -6,7 +6,6 @@ import java.util.Objects;
 
 public class FunnelRateLimiter {
 
-
     static class Funnel {
         int capacity;//漏斗容量
         float leakingRate;//漏嘴流水速率
@@ -70,7 +69,7 @@ public class FunnelRateLimiter {
     public static void main(String[] args) throws InterruptedException {
         FunnelRateLimiter funnelRateLimiter = new FunnelRateLimiter();
         for (int i = 0; i < 1000; i++) {
-            System.out.println(funnelRateLimiter.isActionAllowed("111","aaa",10,1));
+            System.out.println(funnelRateLimiter.isActionAllowed("111", "aaa", 10, 1));
         }
     }
 

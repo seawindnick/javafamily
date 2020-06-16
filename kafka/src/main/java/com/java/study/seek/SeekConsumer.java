@@ -1,5 +1,6 @@
 package com.java.study.seek;
 
+import com.alibaba.fastjson.JSONObject;
 import com.java.study.util.KafkaUtil;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
@@ -33,16 +34,39 @@ public class SeekConsumer implements Runnable {
             assignment = consumer.assignment();
         }
 
+        int count = 0;
+        Map<String, Integer> map = new HashMap<>();
 
         for (TopicPartition topicPartition : assignment) {
-            consumer.seek(topicPartition, 10);
-        }
-        while (true) {
-            ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000));
-            for (ConsumerRecord<String, String> record : records) {
-                System.out.println(record.offset() + ":" + record.partition() + ":" + record.value());
+            if (topicPartition.partition() != 2){
+                continue;
             }
+
+            if (topicPartition.partition() == 2) {
+                consumer.seek(topicPartition, 137053683);
+            }
+
+            while (true){
+                ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000));
+                for (ConsumerRecord<String, String> record : records) {
+                    BinlogMessage binlogMessage = JSONObject.parseObject(record.value(), BinlogMessage.class);
+                    String table = binlogMessage.getTable();
+                    if (!map.containsKey(binlogMessage.getTable())){
+                        map.put(table,0);
+                    }
+
+                    map.put(table,map.get(table) + 1);
+                    count ++ ;
+                    if (count > 100000){
+                        break;
+                    }
+                }
+            }
+
         }
+
+        System.out.println(JSONObject.toJSONString(map));
+
 
     }
 
@@ -88,8 +112,8 @@ public class SeekConsumer implements Runnable {
         Map<TopicPartition, OffsetAndTimestamp> offsets = consumer.offsetsForTimes(timestampToSearch);
         for (TopicPartition topicPartition : assignment) {
             OffsetAndTimestamp offsetAndTimestamp = offsets.get(topicPartition);
-            if (Objects.nonNull(offsetAndTimestamp)){
-                consumer.seek(topicPartition,offsetAndTimestamp.offset());
+            if (Objects.nonNull(offsetAndTimestamp)) {
+                consumer.seek(topicPartition, offsetAndTimestamp.offset());
             }
         }
 
