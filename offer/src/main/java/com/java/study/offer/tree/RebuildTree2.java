@@ -1,4 +1,4 @@
-package com.java.study.offer.chapter5;
+package com.java.study.offer.tree;
 
 import com.alibaba.fastjson.JSONObject;
 import lombok.Data;

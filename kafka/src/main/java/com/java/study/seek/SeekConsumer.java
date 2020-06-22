@@ -38,13 +38,14 @@ public class SeekConsumer implements Runnable {
         Map<String, Integer> map = new HashMap<>();
 
         for (TopicPartition topicPartition : assignment) {
-            if (topicPartition.partition() != 2){
-                continue;
-            }
-
-            if (topicPartition.partition() == 2) {
-                consumer.seek(topicPartition, 137053683);
-            }
+//            if (topicPartition.partition() != 2){
+//                continue;
+//            }
+//
+//            if (topicPartition.partition() == 2) {
+//
+//            }
+            consumer.seek(topicPartition, 0);
 
             while (true){
                 ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000));
