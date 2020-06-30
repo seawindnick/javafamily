@@ -1,4 +1,4 @@
-package com.java.study.offer;
+package com.java.study.offer.link;
 
 import lombok.Data;
 

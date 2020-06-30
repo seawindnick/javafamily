@@ -5,10 +5,9 @@ import lombok.Data;
 
 import java.util.Objects;
 
-public class MirrorTree {
+public class Traversal {
 
     public static void main(String[] args) {
-
         TreeNode treeNode = new TreeNode();
         treeNode.setValue(10);
 
@@ -27,35 +26,36 @@ public class MirrorTree {
         leftNode1.setValue(7);
         rightNode.setLeft(leftNode1);
 
+        TreeNode leftNode2 = new TreeNode();
+        leftNode2.setValue(5);
+        leftNode1.setLeft(leftNode2);
+
 
         TreeNode rightNode1 = new TreeNode();
         rightNode1.setValue(6);
         rightNode.setRight(rightNode1);
 
-
-        System.out.println(JSONObject.toJSONString(treeNode));
-        mirrorTree(treeNode);
         System.out.println(JSONObject.toJSONString(treeNode));
 
+        praversalPrint(treeNode);
 
     }
 
-    private static void mirrorTree(TreeNode treeNode) {
-        if (treeNode == null || (Objects.isNull(treeNode.left) && Objects.isNull(treeNode.right))) {
+    private static void praversalPrint(TreeNode treeNode) {
+
+        if (Objects.isNull(treeNode)){
             return;
         }
 
-        TreeNode leftNode = treeNode.left;
-        treeNode.setLeft(treeNode.right);
-        treeNode.setRight(leftNode);
-
         if (Objects.nonNull(treeNode.left)){
-            mirrorTree(treeNode.left);
+            praversalPrint(treeNode.left);
         }
 
         if (Objects.nonNull(treeNode.right)){
-            mirrorTree(treeNode.right);
+            praversalPrint(treeNode.right);
         }
+        System.out.println(treeNode.value);
+
     }
 
 
@@ -65,5 +65,4 @@ public class MirrorTree {
         private TreeNode left;
         private TreeNode right;
     }
-
 }

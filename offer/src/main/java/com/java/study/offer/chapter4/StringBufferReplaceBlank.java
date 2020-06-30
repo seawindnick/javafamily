@@ -2,7 +2,11 @@ package com.java.study.offer.chapter4;
 
 import com.alibaba.fastjson.JSONArray;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class StringBufferReplaceBlank {
 
@@ -20,6 +24,10 @@ public class StringBufferReplaceBlank {
 
         System.out.println(JSONArray.toJSONString(tempChar));
 
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("2");
+        list.stream().filter(st -> Objects.equals("1",st)).collect(Collectors.toList());
     }
 
 

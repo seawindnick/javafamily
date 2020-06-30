@@ -30,7 +30,7 @@ public class SeekConsumer implements Runnable {
         //优化为
         Set<TopicPartition> assignment = new HashSet<>();
         while (assignment.size() == 0) {
-            consumer.poll(Duration.ofMillis(100));
+            consumer.poll(Duration.ofMillis(1000));
             assignment = consumer.assignment();
         }
 
@@ -38,30 +38,17 @@ public class SeekConsumer implements Runnable {
         Map<String, Integer> map = new HashMap<>();
 
         for (TopicPartition topicPartition : assignment) {
-//            if (topicPartition.partition() != 2){
-//                continue;
-//            }
-//
-//            if (topicPartition.partition() == 2) {
-//
-//            }
+
             consumer.seek(topicPartition, 0);
-
-            while (true){
-                ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000));
+            int countNum = 50;
+            while (countNum > 0){
+                ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
                 for (ConsumerRecord<String, String> record : records) {
-                    BinlogMessage binlogMessage = JSONObject.parseObject(record.value(), BinlogMessage.class);
-                    String table = binlogMessage.getTable();
-                    if (!map.containsKey(binlogMessage.getTable())){
-                        map.put(table,0);
-                    }
-
-                    map.put(table,map.get(table) + 1);
-                    count ++ ;
-                    if (count > 100000){
-                        break;
-                    }
+                   String value = record.value();
+                    System.out.println(value);
                 }
+
+                countNum--;
             }
 
         }

@@ -3,12 +3,11 @@ package com.java.study.offer.tree;
 import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
 
-import java.util.Objects;
+import java.util.*;
 
-public class MirrorTree {
+public class PrintTree {
 
     public static void main(String[] args) {
-
         TreeNode treeNode = new TreeNode();
         treeNode.setValue(10);
 
@@ -27,34 +26,37 @@ public class MirrorTree {
         leftNode1.setValue(7);
         rightNode.setLeft(leftNode1);
 
+        TreeNode leftNode2 = new TreeNode();
+        leftNode2.setValue(5);
+        leftNode1.setLeft(leftNode2);
+
 
         TreeNode rightNode1 = new TreeNode();
         rightNode1.setValue(6);
         rightNode.setRight(rightNode1);
 
-
-        System.out.println(JSONObject.toJSONString(treeNode));
-        mirrorTree(treeNode);
         System.out.println(JSONObject.toJSONString(treeNode));
 
+        printTree(treeNode);
 
     }
 
-    private static void mirrorTree(TreeNode treeNode) {
-        if (treeNode == null || (Objects.isNull(treeNode.left) && Objects.isNull(treeNode.right))) {
+    private static void printTree(TreeNode treeNode) {
+        if (Objects.isNull(treeNode)){
             return;
         }
 
-        TreeNode leftNode = treeNode.left;
-        treeNode.setLeft(treeNode.right);
-        treeNode.setRight(leftNode);
-
-        if (Objects.nonNull(treeNode.left)){
-            mirrorTree(treeNode.left);
-        }
-
-        if (Objects.nonNull(treeNode.right)){
-            mirrorTree(treeNode.right);
+        LinkedList<TreeNode> linkedList = new LinkedList();
+        linkedList.add(treeNode);
+        while (!linkedList.isEmpty()){
+            TreeNode node = linkedList.pop();
+            System.out.println(node.value);
+            if (Objects.nonNull(node.left)){
+                linkedList.add(node.left);
+            }
+            if (Objects.nonNull(node.right)){
+                linkedList.add(node.right);
+            }
         }
     }
 
@@ -65,5 +67,4 @@ public class MirrorTree {
         private TreeNode left;
         private TreeNode right;
     }
-
 }

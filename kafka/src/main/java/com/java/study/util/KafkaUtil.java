@@ -9,10 +9,10 @@ import java.util.Properties;
 
 public class KafkaUtil {
 
-    public static final String brokerList = "kafka01-test.lianjia.com:9092,kafka02-test.lianjia.com:9092,kafka03-test.lianjia.com:9092";
+    public static final String brokerList = "kafka17-online.zeus.ljnode.com:9092 kafka18-online.zeus.ljnode.com:9092 kafka19-online.zeus.ljnode.com:9092";
     public static final String topic = "topic-demo1";
     public static final String clientId = "producer.client.id.demo";
-    public static final String groupId = "group.demo.11112";
+    public static final String groupId = "group.demo.11112121111";
 
    public static org.apache.kafka.clients.producer.KafkaProducer<String, String> producerInstance(){
         Properties properties = new Properties();
@@ -34,10 +34,11 @@ public class KafkaUtil {
         properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,"org.apache.kafka.common.serialization.StringDeserializer");
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,brokerList);
         properties.put(ConsumerConfig.GROUP_ID_CONFIG,groupId);
+        properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"earliest");
         org.apache.kafka.clients.consumer.KafkaConsumer<String,String> consumer = new org.apache.kafka.clients.consumer.KafkaConsumer<String, String>(properties);
         //创建一个消费者客户端实例
         consumer =  new org.apache.kafka.clients.consumer.KafkaConsumer(properties);
-        consumer.subscribe(Collections.singleton("cto-canal-order-status-change"));
+        consumer.subscribe(Collections.singleton("cto-online-book-switch"));
         return consumer;
 
     }
