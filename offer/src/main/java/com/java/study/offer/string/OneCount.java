@@ -23,6 +23,7 @@ public class OneCount {
             }
         }
         System.out.println("------" + count);
+
         return count;
     }
 
