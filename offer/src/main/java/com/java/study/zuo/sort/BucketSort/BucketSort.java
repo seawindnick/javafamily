@@ -1,73 +1,34 @@
-package com.java.study.zuo.sort.heap;
-
-import com.alibaba.fastjson.JSONArray;
-import com.java.study.zuo.sort.ArrayUtil;
+package com.java.study.zuo.sort.BucketSort;
 
 import java.util.Arrays;
 
-/**
- * 堆排序
- */
-public class HeapSort {
+public class BucketSort {
 
-
-    public static void heapSort(int[] arr) {
+    public static void bucketSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
 
+        int maxValue = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
-            heapInsert(arr, i);
+            maxValue = Math.max(arr[i], maxValue);
         }
 
-        int size = arr.length;
-        ArrayUtil.swap(arr, 0, --size);
-        while (size > 0) {
-            heapify(arr, 0, size);
-            ArrayUtil.swap(arr, 0, --size);
+        int[] bucketArr = new int[maxValue + 1];
+
+        for (int i = 0; i < arr.length; i++) {
+            bucketArr[arr[i]] = bucketArr[arr[i]] + 1;
         }
-    }
 
-    /**
-     * @param arr
-     * @param index
-     * @param size
-     */
-    private static void heapify(int[] arr, int index, int size) {
-        int leftIndex = index * 2 + 1;
-
-        //最后一列不参与调整
-        while (leftIndex < size) {
-            //获取左右节点最大值节点位置，注意 右节点可能越界
-            int targetIndex = (leftIndex + 1) < size && arr[leftIndex + 1] > arr[leftIndex] ? leftIndex + 1 : leftIndex;
-            //判断左右节点最大值 与 父节点比较，结果是值大的元素位置
-            targetIndex = arr[targetIndex] > arr[index] ? targetIndex : index;
-
-            //如果此时父节点是大的，那么子节点不需要再调整
-            if (targetIndex == index) {
-                break;
+        int index = 0;
+        for (int i = 0; i < bucketArr.length; i++) {
+            while (bucketArr[i]-- > 0) {
+                arr[index] = i;
+                index++;
             }
-
-            //如果父节点不是最大，节点下沉，再对左节点/右节点数据进行下沉
-            ArrayUtil.swap(arr, targetIndex, index);
-            index = targetIndex;
-            leftIndex = index * 2 + 1;
         }
     }
 
-    /**
-     * 构建最大堆
-     *
-     * @param arr
-     * @param index
-     */
-    private static void heapInsert(int[] arr, int index) {
-        while (arr[index] > arr[(index - 1) / 2]) {
-            ArrayUtil.swap(arr, index, (index - 1) / 2);
-            index = (index - 1) / 2;
-        }
-
-    }
 
     // for test
     public static void comparator(int[] arr) {
@@ -78,7 +39,7 @@ public class HeapSort {
     public static int[] generateRandomArray(int maxSize, int maxValue) {
         int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
+            arr[i] = (int) ((maxValue + 1) * Math.random());
         }
         return arr;
     }
@@ -129,15 +90,17 @@ public class HeapSort {
     public static void main(String[] args) {
         int testTime = 500000;
         int maxSize = 100;
-        int maxValue = 100;
+        int maxValue = 150;
         boolean succeed = true;
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
-            heapSort(arr1);
+            bucketSort(arr1);
             comparator(arr2);
             if (!isEqual(arr1, arr2)) {
                 succeed = false;
+                printArray(arr1);
+                printArray(arr2);
                 break;
             }
         }
@@ -145,8 +108,9 @@ public class HeapSort {
 
         int[] arr = generateRandomArray(maxSize, maxValue);
         printArray(arr);
-        heapSort(arr);
+        bucketSort(arr);
         printArray(arr);
+
     }
 
 }
