@@ -6,7 +6,7 @@ import java.util.Queue;
 /**
  * 队列实现栈
  */
-public class Queue2Stacck {
+public class Queue2Stack {
 
     private Queue<Integer> queue1 = new LinkedList<>();
     private Queue<Integer> queue2 = new LinkedList<>();
@@ -57,7 +57,7 @@ public class Queue2Stacck {
     }
 
     public static void main(String[] args) {
-        Queue2Stacck queue2Stacck = new Queue2Stacck();
+        Queue2Stack queue2Stacck = new Queue2Stack();
 
         for (int i = 0; i < 10 ; i++) {
             queue2Stacck.push(i);

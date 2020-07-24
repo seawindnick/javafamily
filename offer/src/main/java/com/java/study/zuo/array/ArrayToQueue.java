@@ -1,4 +1,4 @@
-package com.java.study.zuo.array.array;
+package com.java.study.zuo.array;
 
 /**
  * 使用数据实现队列
