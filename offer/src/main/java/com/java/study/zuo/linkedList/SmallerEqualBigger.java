@@ -19,7 +19,7 @@ public class SmallerEqualBigger {
 
         Node headNode = node;
         while (headNode != null) {
-            //精髓
+            //创建 小 等于 大于 三个链表，末尾追加对应的数据信息
             Node next = headNode.next;
             headNode.setNext(null);
             if (headNode.value < targetValue) {
@@ -65,6 +65,64 @@ public class SmallerEqualBigger {
 
     }
 
+    /**
+     * 米兰国旗
+     *
+     * @param node
+     * @param target
+     * @return
+     */
+    public static Node listPartition1(Node node, int target) {
+        if (node == null) {
+            return node;
+        }
+
+
+        int num = 0;
+        Node cauclateNumNode = node;
+        while (cauclateNumNode != null) {
+            num++;
+            cauclateNumNode = cauclateNumNode.next;
+        }
+
+        Node[] array = new Node[num];
+
+        Node arrayNode = node;
+        int index = 0;
+        while (arrayNode != null) {
+            array[index] = arrayNode;
+            arrayNode = arrayNode.next;
+            index++;
+        }
+
+        int leftIndex = -1;
+        int rightIndex = array.length;
+        int curIndex = 0;
+
+        while (curIndex < rightIndex) {
+            if (array[curIndex].value < target) {
+                swap(array, ++leftIndex, curIndex++);
+            } else if (array[curIndex].value > target) {
+                swap(array, --rightIndex, curIndex);
+            } else {
+                curIndex++;
+            }
+        }
+
+        for (int i = 1; i < array.length; i++) {
+            array[i].setNext(null);
+            array[i - 1].setNext(array[i]);
+        }
+        return array[0];
+    }
+
+    private static void swap(Node[] array, int leftIndex, int rightIndex) {
+        Node temp = array[leftIndex];
+        array[leftIndex] = array[rightIndex];
+        array[rightIndex] = temp;
+    }
+
+
     public static void printLinkedList(Node node) {
         System.out.print("Linked List: ");
         while (node != null) {
@@ -83,7 +141,8 @@ public class SmallerEqualBigger {
         head1.next.next.next.next.next = new Node(2);
         head1.next.next.next.next.next.next = new Node(5);
         printLinkedList(head1);
-        // head1 = listPartition1(head1, 4);
+        head1 = listPartition1(head1, 5);
+        printLinkedList(head1);
         head1 = smallerEqualBigger(head1, 5);
         printLinkedList(head1);
 
