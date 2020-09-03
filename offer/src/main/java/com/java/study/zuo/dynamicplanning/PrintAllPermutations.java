@@ -36,7 +36,7 @@ public class PrintAllPermutations {
                 swap(arr, i, curIndex);
                 printAllPermutations(arr, curIndex + 1,hashSet);
                 //完事之后 还原
-                swap(arr, i, curIndex);
+//                swap(arr, i, curIndex);
             }
         }
     }

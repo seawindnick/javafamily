@@ -9,8 +9,8 @@ import java.util.Stack;
 
 @Data
 public class Node {
-    private Node nextNode;
-    private Integer value;
+    public Node nextNode;
+    public Integer value;
 
 
     public static void main(String[] args) {
