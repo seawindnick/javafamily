@@ -86,7 +86,8 @@ public class CheckUtil {
 //            Code_03_HeapSort.HeapSort(arr1);
 //            Code_04_QuickSort.QuickSort(arr1);
 //            Code_04_QuickSort_Old.Code_04_QuickSort_Old(arr1);
-            Code_05_MergeSort.MergeSort(arr1);
+//            Code_05_MergeSort.MergeSort(arr1);
+            Code_06_BucketSort.BucketSort(arr1);
             comparator(arr2);
             if (!isEqual(arr1, arr2)) {
                 succeed = false;
@@ -103,7 +104,8 @@ public class CheckUtil {
 //        Code_03_HeapSort.HeapSort(arr);
 //        Code_04_QuickSort.QuickSort(arr);
 //        Code_04_QuickSort_Old.Code_04_QuickSort_Old(arr);
-        Code_05_MergeSort.MergeSort(arr);
+//        Code_05_MergeSort.MergeSort(arr);
+        Code_06_BucketSort.BucketSort(arr);
 
         printArray(arr);
     }
