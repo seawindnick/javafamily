@@ -33,7 +33,7 @@ public class Code_08_Money_Problem {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = { 1, 4, 8 };
+		int[] arr = { 1, 413, 8 };
 		int aim = 12;
 		System.out.println(money1(arr, aim));
 		System.out.println(money2(arr, aim));

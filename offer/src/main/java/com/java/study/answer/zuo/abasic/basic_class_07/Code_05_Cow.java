@@ -36,7 +36,7 @@ public class Code_05_Cow {
 
 	public static void main(String[] args) {
 		int n = 20;
-		System.out.println(cowNumber1(n));
+//		System.out.println(cowNumber1(n));
 		System.out.println(cowNumber2(n));
 	}
 
