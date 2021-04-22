@@ -20,6 +20,45 @@ public class Code_11_IsPalindromeList {
         }
     }
 
+
+//    public static Boolean IsPalindromeList(Node node) {
+//        if (node == null || node.next == null) {
+//            return Boolean.TRUE;
+//        }
+//
+//        Node slowNode = node;
+//        Node fastNode = node;
+//
+//        while (fastNode != null && fastNode.next != null) {
+//            slowNode = slowNode.next;
+//            fastNode = fastNode.next.next;
+//        }
+//
+//
+//        Node afterHalfShouldReversedNode = slowNode.next;
+//        slowNode.next = null;
+//
+//        Node afterHalfReversedNode = resverNode(afterHalfShouldReversedNode);
+//        Node checkNode = afterHalfReversedNode;
+//
+//        Boolean flag = true;
+//
+//        Node checkHeadNode = node;
+//        while (checkNode != null && checkHeadNode != null) {
+//            if (checkHeadNode.value != checkNode.value) {
+//                flag = false;
+//                break;
+//            }
+//            checkNode = checkNode.next;
+//            checkHeadNode = checkHeadNode.next;
+//        }
+//
+//        slowNode.next = resverNode(afterHalfReversedNode);
+//
+//        return flag;
+//
+//    }
+
     public static Boolean IsPalindromeList(Node node) {
         if (node == null || node.next == null) {
             return Boolean.TRUE;

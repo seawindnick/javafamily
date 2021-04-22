@@ -1,5 +1,7 @@
 package com.java.study.answer.zuo.dadvanced.advanced_class_02;
 
+import com.alibaba.fastjson.JSONArray;
+
 public class Code_01_Ugly_Number {
 
 	public static int uglyNumber1(int index) {
@@ -40,11 +42,12 @@ public class Code_01_Ugly_Number {
 				i5++;
 			index++;
 		}
+		System.out.println(JSONArray.toJSONString(help));
 		return help[index - 1];
 	}
 
 	public static void main(String[] args) {
-		int test = 8;
+		int test = 20;
 		System.out.println(uglyNumber1(test));
 		System.out.println(uglyNumber2(test));
 	}

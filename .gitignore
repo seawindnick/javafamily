@@ -641,3 +641,4 @@ flycheck_*.el
 
 rebel*.xml
 *.orig
+*.idea/*
