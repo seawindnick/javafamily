@@ -43,6 +43,14 @@ public class Code_04_Manacher {
 
 
         }
+
+        // TODO 问什么返回max-1?
+        /***
+         *
+         * # a # b # c # b # a #
+         * 以c为中心的回文半径为 6，其回文总长度为  abcba 为5
+         *
+         */
         return max - 1;
     }
 

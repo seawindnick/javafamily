@@ -13,28 +13,20 @@ import java.util.*;
  */
 public class Code_02_Palindrome_Pairs {
 
-    public static List<Integer[]> Palindrome_Pairs(String[] arr) {
+    public static List<List<Integer>> palindromePairs(String[] arr) {
 
-        List<Integer[]> list = new ArrayList<>();
+        List<List<Integer>> list = new ArrayList<>();
         Map<String, Integer> indexMap = buildIndexMap(arr);
 
         for (int i = 0; i < arr.length; i++) {
-
-            List<String> target = findPalindromePairs(arr[i]);
-            if (target != null && !target.isEmpty()) {
-                for (String result : target) {
-                    if (indexMap.containsKey(result) && indexMap.get(result) != i) {
-                        list.add(new Integer[]{i, indexMap.get(result)});
-                    }
-                }
-            }
+            findPalindromePairs(arr[i], i, indexMap, list);
         }
 
         return list;
     }
 
-    private static List<String> findPalindromePairs(String matchStr) {
-        List<String> targetList = new ArrayList<>();
+    private static void findPalindromePairs(String matchStr, int i, Map<String, Integer> indexMap, List<List<Integer>> list) {
+
 
         char[] array = getMach(matchStr);
 
@@ -43,53 +35,67 @@ public class Code_02_Palindrome_Pairs {
         int[] palind = new int[array.length];
         int max = -1;
 
-        int index = 1;
 
-        //无脑添加整体逆转
-        targetList.add(reverse(matchStr));
+//        //无脑添加整体逆转
+//        targetList.add(reverse(matchStr));
 
-        while (index < array.length) {
-            palind[index] = 1;
-            if (maxRight > index) {
-                palind[index] = Math.min(palind[2 * centerIndex - index], maxRight - index);
+        for (int index = 0; index < array.length; index++) {
+            palind[index] = maxRight > index ? Math.min(palind[2 * centerIndex - index], maxRight - index) : 1;
+
+            while (index - palind[index] > -1 && index + palind[index] < array.length) {
+                if (array[index - palind[index]] == array[index + palind[index]]) {
+                    palind[index]++;
+                } else {
+                    break;
+                }
             }
 
-            while (index - palind[index] >= 0 && index + palind[index] < array.length && array[index - palind[index]] == array[index + palind[index]]) {
-                palind[index]++;
-            }
-
-            if (index + palind[index] >= maxRight) {
+            if (index + palind[index] > maxRight) {
                 maxRight = index + palind[index];
+                centerIndex = index;
             }
 
             max = Math.max(max, palind[index]);
 
             //说明当前位置到 头部 有回文部分
-            if (index - palind[index] + 1 == 0 && index + palind[index] - 1 != array.length + 1) {
+            if (index - palind[index] + 1 == 0 && index + palind[index] != array.length) {
                 String value = reversePreHalf(array, index, palind[index]);
-                targetList.add(value);
+                if (!value.equals(matchStr) && indexMap.containsKey(value)) {
+                    List<Integer> result = new ArrayList<>();
+                    result.add(indexMap.get(value));
+                    result.add(i);
+                    list.add(result);
+                }
             }
 
-            if (index + palind[index] + 1 == array.length - 1 && index - palind[index] + 1 != 0) {
+            if (index + palind[index] == array.length - 1 && index - palind[index] != 0) {
                 String value = reverseAfterHalf(array, index, palind[index]);
-                targetList.add(value);
+                if (!value.equals(matchStr) && indexMap.containsKey(value)) {
+                    List<Integer> result = new ArrayList<>();
+                    result.add(i);
+                    result.add(indexMap.get(value));
+                    list.add(result);
+                }
+            }
+        }
+
+        if (max - 1 == matchStr.length()) {
+            Integer rest = indexMap.get("");
+            if (rest != null && !matchStr.equals("")) {
+                List<Integer> result = new ArrayList<>();
+                result.add(indexMap.get(""));
+                result.add(i);
+                list.add(result);
+
+                result = new ArrayList<>();
+                result.add(i);
+                result.add(indexMap.get(""));
+                list.add(result);
             }
 
         }
-
-        return targetList;
     }
 
-    private static String reversePre(String matchStr) {
-        char[] chars = new char[matchStr.length()];
-
-        int curIndex = 0;
-        while (curIndex < matchStr.length()) {
-            chars[curIndex] = matchStr.charAt(matchStr.length() - 1 - curIndex);
-        }
-        return String.valueOf(chars);
-
-    }
 
     private static String reverseAfterHalf(char[] array, int index, int palindLength) {
         int maxLeftIndex = index - palindLength + 1;
@@ -156,7 +162,9 @@ public class Code_02_Palindrome_Pairs {
     }
 
     public static void main(String[] args) {
-        String[] words = new String[]{"bat", "tab", "cat"};
-        System.out.println(JSONArray.toJSONString(Palindrome_Pairs(words)));
+        String[] words = new String[]{"a", "ab"};
+        System.out.println(JSONArray.toJSONString(palindromePairs(words)));
+
+        System.out.println(com.java.study.answer.zuo.dadvanced.advanced_class_02.Code_02_Palindrome_Pairs.palindromePairs(words));
     }
 }

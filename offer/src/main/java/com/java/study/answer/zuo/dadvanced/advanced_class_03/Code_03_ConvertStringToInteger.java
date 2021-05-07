@@ -50,7 +50,7 @@ public class Code_03_ConvertStringToInteger {
 		String test1 = "2147483647"; // max in java
 		System.out.println(convert(test1));
 
-		String test2 = "-2147483648"; // min in java
+		String test2 = "-2147483688"; // min in java
 		System.out.println(convert(test2));
 
 		String test3 = "2147483648"; // overflow
