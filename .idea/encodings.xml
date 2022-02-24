@@ -2,9 +2,40 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interview" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interview/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interview/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/offer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/offer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/offer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rpc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rpc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rpc/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shiro" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shiro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shiro/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sourcecode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sourcecode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sourcecode/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/src/main/resources" charset="UTF-8" />
   </component>
 </project>

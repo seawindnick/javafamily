@@ -1,7 +1,5 @@
 package com.java.study.offer.array;
 
-import com.alibaba.fastjson.JSONArray;
-
 public class BitMap {
     private long[] words;
     private int size;

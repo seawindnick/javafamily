@@ -76,7 +76,9 @@ public class Code_05_MaxOneBorderSize {
 	}
 
 	public static void main(String[] args) {
-		int[][] matrix = generateRandom01Matrix(7, 8);
+//		int[][] matrix = generateRandom01Matrix(7, 8);
+//		int[][] matrix = new int[][]{{1, 0, 0, 1}, {1, 1, 1, 1}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+		int[][] matrix = {{1,0,1,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}};
 		printMatrix(matrix);
 		System.out.println(getMaxSize(matrix));
 	}

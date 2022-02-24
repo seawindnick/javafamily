@@ -9,8 +9,8 @@ import java.util.Properties;
 
 public class KafkaUtil {
 
-    public static final String brokerList = "kafka17-online.zeus.ljnode.com:9092 kafka18-online.zeus.ljnode.com:9092 kafka19-online.zeus.ljnode.com:9092";
-    public static final String topic = "topic-demo1";
+    public static final String brokerList = "kafka118-online.zeus.ljnode.com:9092,kafka119-online.zeus.ljnode.com:9092,kafka120-online.zeus.ljnode.com:9092";
+    public static final String topic = "beijia-settle-detail-event-change";
     public static final String clientId = "producer.client.id.demo";
     public static final String groupId = "group.demo.11112121111";
 
@@ -38,7 +38,7 @@ public class KafkaUtil {
         org.apache.kafka.clients.consumer.KafkaConsumer<String,String> consumer = new org.apache.kafka.clients.consumer.KafkaConsumer<String, String>(properties);
         //创建一个消费者客户端实例
         consumer =  new org.apache.kafka.clients.consumer.KafkaConsumer(properties);
-        consumer.subscribe(Collections.singleton("cto-online-book-switch"));
+        consumer.subscribe(Collections.singleton("store-manager-take-money"));
         return consumer;
 
     }

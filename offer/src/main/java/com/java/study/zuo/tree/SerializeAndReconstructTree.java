@@ -1,8 +1,6 @@
 package com.java.study.zuo.tree;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * 树序列化与反序列化

@@ -1,9 +1,6 @@
 package com.java.study.algorithm.zuo.abasic.basic_class_01;
 
-import com.alibaba.fastjson.JSONArray;
 import com.java.study.zuo.sort.ArrayUtil;
-
-import java.util.ArrayList;
 
 /**
  * 荷兰国旗

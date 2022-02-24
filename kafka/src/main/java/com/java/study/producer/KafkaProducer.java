@@ -13,8 +13,8 @@ public class KafkaProducer implements Runnable {
     @Override
     public void run() {
         org.apache.kafka.clients.producer.KafkaProducer<String, String> kafkaProducer = KafkaUtil.producerInstance();
-        for (int i = 0; i < 100; i++) {
-            ProducerRecord<String, String> record = new ProducerRecord<>(KafkaUtil.topic, i+"","hello,kafka" + i);
+        for (int i = 0; i < 1; i++) {
+            ProducerRecord<String, String> record = new ProducerRecord<>(KafkaUtil.topic, "{\"businessId\":\"54486957404770704\",\"businessLine\":1,\"businessName\":\"公寓速销\",\"eventType\":\"Paid\",\"id\":201,\"timeStamp\":1629704206136}");
             try {
                 Future<RecordMetadata> future = kafkaProducer.send(record);
                 RecordMetadata recordMetadata = future.get();

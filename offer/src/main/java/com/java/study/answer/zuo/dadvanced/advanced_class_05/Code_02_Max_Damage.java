@@ -18,7 +18,7 @@ public class Code_02_Max_Damage {
 				dp[i][j] = Math.max(no, Math.max(only, part));
 			}
 		}
-		// printMatrix(dp); // 可以打印dp看看
+		 printMatrix(dp); // 可以打印dp看看
 		return dp[dp.length - 1][dp[0].length - 1];
 	}
 

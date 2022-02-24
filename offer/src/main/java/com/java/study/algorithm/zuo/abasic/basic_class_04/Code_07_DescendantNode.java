@@ -1,7 +1,5 @@
 package com.java.study.algorithm.zuo.abasic.basic_class_04;
 
-import com.java.study.zuo.tree.ParentTreeNode;
-
 /**
  * 该结构比普通二叉树节点结构多了一个指向父节点的parent指针。
  * 假设有一 棵Node类型的节点组成的二叉树，树中每个节点的parent指针都正确地指向 自己的父节点，

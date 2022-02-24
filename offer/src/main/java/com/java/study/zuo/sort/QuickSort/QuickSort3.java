@@ -1,7 +1,5 @@
 package com.java.study.zuo.sort.QuickSort;
 
-import com.java.study.zuo.sort.ArrayUtil;
-
 import java.util.Arrays;
 
 public class QuickSort3 {

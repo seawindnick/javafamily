@@ -1,0 +1,15 @@
+Java HotSpot(TM) 64-Bit Server VM (25.181-b13) for bsd-amd64 JRE (1.8.0_181-b13), built on Jul  7 2018 01:02:31 by "java_re" with gcc 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)
+Memory: 4k page, physical 33554432k(3084776k free)
+
+/proc/meminfo:
+
+CommandLine flags: -XX:InitialHeapSize=41943040 -XX:MaxHeapSize=41943040 -XX:MaxNewSize=20971520 -XX:MaxTenuringThreshold=15 -XX:NewSize=20971520 -XX:OldPLABSize=16 -XX:PretenureSizeThreshold=10485760 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:SurvivorRatio=2 -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseConcMarkSweepGC -XX:+UseParNewGC 
+0.117: [GC (Allocation Failure) 0.117: [ParNew: 9254K->3599K(15360K), 0.0025708 secs] 9254K->3599K(35840K), 0.0026613 secs] [Times: user=0.02 sys=0.00, real=0.00 secs] 
+Heap
+ par new generation   total 15360K, used 4828K [0x00000007bd800000, 0x00000007bec00000, 0x00000007bec00000)
+  eden space 10240K,  12% used [0x00000007bd800000, 0x00000007bd9335d0, 0x00000007be200000)
+  from space 5120K,  70% used [0x00000007be700000, 0x00000007bea83cc0, 0x00000007bec00000)
+  to   space 5120K,   0% used [0x00000007be200000, 0x00000007be200000, 0x00000007be700000)
+ concurrent mark-sweep generation total 20480K, used 0K [0x00000007bec00000, 0x00000007c0000000, 0x00000007c0000000)
+ Metaspace       used 3206K, capacity 4496K, committed 4864K, reserved 1056768K
+  class space    used 354K, capacity 388K, committed 512K, reserved 1048576K
