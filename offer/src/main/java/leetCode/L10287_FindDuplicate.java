@@ -66,8 +66,6 @@ public class L10287_FindDuplicate {
     }
 
     public static int findDuplicate(int[] nums) {
-
-
         int cunIndex = 0;
         while (cunIndex < nums.length) {
             if (cunIndex + 1 == nums[cunIndex]) {

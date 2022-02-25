@@ -8,105 +8,27 @@
     <bookmark url="file://$PROJECT_DIR$/../../lianjia/house-data-service/src/main/java/com/ke/house/data/manage/impl/datastream/RentHouseDetailStream.java" description="rentHouseDetailStreamDto" line="119" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3e2f0ce-e690-4e23-8e67-f45d3415d2fd" name="Default Changelist" comment="[fix-左程云算法]">
-      <change afterPath="$PROJECT_DIR$/interview/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interview/src/main/java/com/study/chapter3/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interview/src/main/java/com/study/chapter3/HashCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interview/src/main/java/com/study/chapter3/RateInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interview/src/test/java/com/study/103976个英语单词库.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interview/src/test/java/com/study/ThreadState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interview/src/test/java/com/study/YieldTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaBasic/src/com/study/basic/ChaoQingCai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaBasic/src/com/study/basic/LHCLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaBasic/src/com/study/basic/PengRen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaBasic/src/com/study/basic/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaBasic/src/com/study/basic/Reflect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaBasic/src/com/study/basic/ShuiZhuYu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaBasic/src/com/study/basic/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaBasic/src/com/study/basic/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaBasic/src/com/study/basic/nio/MySocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaBasic/src/com/study/basic/nio/WriteSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/AutoAgeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/EdenGC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/FullGC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/FullGcTimes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/FullGcTimesOptimize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/JstateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/MAT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/MetaspaceFull.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/OOM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/OutCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/SoftReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/StringIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/TestModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/YgcOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/jvm/YoungGcTimes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/AutoAgeTest_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/AutoAgeTest_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/AutoAgeTest_5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/BigObject_6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/FullGcTimesOpe_11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/FullGcTimesOpe_12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/FullGcTimes_8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/MAT_12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/MetaspaceFull_10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/OutCount_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/SystemGc_9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/com/java/study/teach/YgcOut_7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/test/java/com/java/study/Compare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offer/src/main/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/FenTangGuo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/LongestPalindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offer/src/test/java/com/java/study/Parent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offer/src/test/java/com/java/study/Son.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offer/src/test/java/com/java/study/offer/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offer/src/test/java/com/java/study/offer/SonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/src/main/java/com/java/study/redission/RedisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sourcecode/src/main/java/com/java/study/basic/ArrayListAndLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sourcecode/src/main/java/com/java/study/basic/ArrayQueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread/src/main/java/com/java/study/customer/ProducterConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread/src/main/java/com/java/study/customer/ProducterConsumer2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zookeeper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e3e2f0ce-e690-4e23-8e67-f45d3415d2fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/src/main/java/com/java/study/producer/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/main/java/com/java/study/producer/KafkaProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka/src/main/java/com/java/study/util/KafkaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/main/java/com/java/study/util/KafkaUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/java/study/ConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/java/study/ConsumerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/offer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/abasic/basic_class_01/Code_08_NetherlandsFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/abasic/basic_class_01/Code_08_NetherlandsFlag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/abasic/basic_class_04/Code_07_DescendantNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/abasic/basic_class_04/Code_07_DescendantNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_01_AddMinusMultiDivideByBit.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_01_AddMinusMultiDivideByBit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_02_ProbabilityXPowerK.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_02_ProbabilityXPowerK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_03_PosArrayToBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_03_PosArrayToBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_04_PrintMaxTopK.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_04_PrintMaxTopK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_05_MaxOneBorderSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_05_MaxOneBorderSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_06_SmallestMissNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_04/Code_06_SmallestMissNum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_05/Code_01_Valid_Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_05/Code_01_Valid_Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_05/Code_02_Max_Damage.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_05/Code_02_Max_Damage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_05/Code_03_Min_Gold.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_05/Code_03_Min_Gold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_05/Code_04_Decompress_String.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_05/Code_04_Decompress_String.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_05/Code_05_ExpressionNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/algorithm/zuo/dadvanced/advanced_class_05/Code_05_ExpressionNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/answer/zuo/dadvanced/advanced_class_04/Code_01_AddMinusMultiDivideByBit.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/answer/zuo/dadvanced/advanced_class_04/Code_01_AddMinusMultiDivideByBit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/answer/zuo/dadvanced/advanced_class_04/Code_05_MaxOneBorderSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/answer/zuo/dadvanced/advanced_class_04/Code_05_MaxOneBorderSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/answer/zuo/dadvanced/advanced_class_05/Code_02_Max_Damage.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/answer/zuo/dadvanced/advanced_class_05/Code_02_Max_Damage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/interview/chapter1/T01_001MinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/interview/chapter1/T01_001MinStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/niuke/LongestValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/niuke/LongestValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/offer/array/BitMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/offer/array/BitMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/offer/tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/offer/tree/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/zuo/dynamicplanning/PrintAllPermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/zuo/dynamicplanning/PrintAllPermutations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/zuo/linkedList/FindFirstIntersectNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/zuo/linkedList/FindFirstIntersectNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/zuo/sort/QuickSort/QuickSort3.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/zuo/sort/QuickSort/QuickSort3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/zuo/sort/heap/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/zuo/sort/heap/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/com/java/study/zuo/tree/SerializeAndReconstructTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/com/java/study/zuo/tree/SerializeAndReconstructTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10139_WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10139_WordBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10169_MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10169_MajorityElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10279_NumSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10279_NumSquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10287_FindDuplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10287_FindDuplicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10300_LengthOfLIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10300_LengthOfLIS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10322_CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10322_CoinChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10347_TopKFrequent.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10347_TopKFrequent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10399_CalcEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10399_CalcEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10406_ReconstructQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10406_ReconstructQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10416_CanPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10416_CanPartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10437_PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10437_PathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10438_FindAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10438_FindAnagrams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10448_FindDisappearedNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10448_FindDisappearedNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10461_HammingDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10461_HammingDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10494_FindTargetSumWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10494_FindTargetSumWays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10543_DiameterOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10543_DiameterOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10617_MergeTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10617_MergeTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10621_LeastInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10621_LeastInterval.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -424,7 +346,7 @@
       <command value="pu" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.L10394_DecodeString">
+  <component name="RunManager" selected="Application.L10416_CanPartition">
     <configuration name="FullGcTimesOpe_12" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.java.study.teach.FullGcTimesOpe_12" />
       <module name="jvm" />
@@ -433,36 +355,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L10283_MoveZeroes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.L10283_MoveZeroes" />
+    <configuration name="L10300_LengthOfLIS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.L10300_LengthOfLIS" />
       <module name="offer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L10287_FindDuplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.L10287_FindDuplicate" />
+    <configuration name="L10322_CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.L10322_CoinChange" />
       <module name="offer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L10297_Deserialize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.L10297_Deserialize" />
+    <configuration name="L10347_TopKFrequent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.L10347_TopKFrequent" />
       <module name="offer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L10338_CountBits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.L10338_CountBits" />
-      <module name="offer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="L10394_DecodeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.L10394_DecodeString" />
+    <configuration name="L10416_CanPartition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.L10416_CanPartition" />
       <module name="offer" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -472,6 +387,12 @@
       <option name="MAIN_CLASS_NAME" value="com.java.study.jvm.OOM" />
       <module name="jvm" />
       <option name="VM_PARAMETERS" value="-Xms10m -Xmx10m  -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:MetaspaceSize=10m -XX:MaxMetaspaceSize=10m -XX:+PrintGCDetails -Xloggc:oom.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$USER_HOME$/Downloads/dump" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Solution" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -488,19 +409,19 @@
       <item itemvalue="Application.FullGcTimesOpe_12" />
       <item itemvalue="Application.OOM" />
       <item itemvalue="Application.StringIndex" />
-      <item itemvalue="Application.L10283_MoveZeroes" />
-      <item itemvalue="Application.L10287_FindDuplicate" />
-      <item itemvalue="Application.L10297_Deserialize" />
-      <item itemvalue="Application.L10338_CountBits" />
-      <item itemvalue="Application.L10394_DecodeString" />
+      <item itemvalue="Application.L10300_LengthOfLIS" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.L10322_CoinChange" />
+      <item itemvalue="Application.L10347_TopKFrequent" />
+      <item itemvalue="Application.L10416_CanPartition" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.L10394_DecodeString" />
-        <item itemvalue="Application.L10338_CountBits" />
-        <item itemvalue="Application.L10297_Deserialize" />
-        <item itemvalue="Application.L10287_FindDuplicate" />
-        <item itemvalue="Application.L10283_MoveZeroes" />
+        <item itemvalue="Application.L10416_CanPartition" />
+        <item itemvalue="Application.L10347_TopKFrequent" />
+        <item itemvalue="Application.L10322_CoinChange" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.L10300_LengthOfLIS" />
       </list>
     </recent_temporary>
   </component>
@@ -1679,7 +1600,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/kafka/src/main/java/com/java/study/util/KafkaUtil.java</url>
-          <line>32</line>
+          <line>29</line>
           <option name="timeStamp" value="568" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1881,6 +1802,36 @@
           <url>file://$PROJECT_DIR$/offer/src/main/java/leetCode/L10234_IsPalindrome.java</url>
           <line>69</line>
           <option name="timeStamp" value="699" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/offer/src/main/java/leetCode/L10617_MergeTrees.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="718" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/offer/src/main/java/leetCode/L10617_MergeTrees.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="720" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/offer/src/main/java/leetCode/L10322_CoinChange.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="732" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[322]零钱兑换.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="733" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/offer/src/main/java/leetCode/L10347_TopKFrequent.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="735" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/offer/src/main/java/leetCode/L10347_TopKFrequent.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="737" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

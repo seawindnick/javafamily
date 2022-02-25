@@ -9,10 +9,7 @@ import java.util.Properties;
 
 public class KafkaUtil {
 
-    public static final String brokerList = "kafka118-online.zeus.ljnode.com:9092,kafka119-online.zeus.ljnode.com:9092,kafka120-online.zeus.ljnode.com:9092";
-    public static final String topic = "beijia-settle-detail-event-change";
-    public static final String clientId = "producer.client.id.demo";
-    public static final String groupId = "group.demo.11112121111";
+
 
    public static org.apache.kafka.clients.producer.KafkaProducer<String, String> producerInstance(){
         Properties properties = new Properties();
