@@ -11,24 +11,6 @@
     <list default="true" id="e3e2f0ce-e690-4e23-8e67-f45d3415d2fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka/src/main/java/com/java/study/util/KafkaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/main/java/com/java/study/util/KafkaUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10139_WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10139_WordBreak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10169_MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10169_MajorityElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10279_NumSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10279_NumSquares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10287_FindDuplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10287_FindDuplicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10300_LengthOfLIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10300_LengthOfLIS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10322_CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10322_CoinChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10347_TopKFrequent.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10347_TopKFrequent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10399_CalcEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10399_CalcEquation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10406_ReconstructQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10406_ReconstructQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10416_CanPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10416_CanPartition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10437_PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10437_PathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10438_FindAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10438_FindAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10448_FindDisappearedNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10448_FindDisappearedNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10461_HammingDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10461_HammingDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10494_FindTargetSumWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10494_FindTargetSumWays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10543_DiameterOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10543_DiameterOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10617_MergeTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10617_MergeTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10621_LeastInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer/src/main/java/leetCode/L10621_LeastInterval.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1600,7 +1582,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/kafka/src/main/java/com/java/study/util/KafkaUtil.java</url>
-          <line>29</line>
+          <line>32</line>
           <option name="timeStamp" value="568" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
